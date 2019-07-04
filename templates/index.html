@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Django 各種サインアップの実装方法</h1>
+    <ul>
+        <li><a href="{% url 'default_signup' %}">デフォルトなサインアップ</a></li>
+    </ul>
+    <ul>
+        <li><a href="{% url 'extend_signup' %}">拡張有りのサインアップ</a></li>
+    </ul>
+    <ul>
+        <li><a href="{% url 'profile_signup' %}">プロファイルでのサインアップ</a></li>
+    </ul>
+    <ul>
+        <li><a href="{% url 'email_signup' %}">メールを介したサインアップ</a></li>
+    </ul>
+
+{% endblock %}
